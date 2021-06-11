@@ -29,10 +29,6 @@ Let's introduce the concept of multi-agent RL, also known as MARL.
 - [Approaches to MARL](#approaches)
 - [Paper: Multi-Agent Actor-Critic for MixedCooperative-Competitive Environments](#paper)
 - [Physical Deception problem: Code implementation](#coding)
-- [](#)
-- [](#)
-- [](#)
-
 - [Setup Instructions](#Setup_Instructions)
 - [Acknowledgments](#Acknowledgments)
 - [Further Links](#Further_Links)
@@ -191,6 +187,7 @@ Adapting single-agent techniques to the multi-agent case
 
 
 ## Physical Deception problem: Code implementation <a name="coding"></a> 
+- Open the folder ```workspace_physical_deception``` and check out the README file there.
 - Train agents to solve the Physical Deception problem.
 - **Goal of the environment**
     - Blue dots are the "good agents".
