@@ -33,7 +33,7 @@ Let's introduce the concept of multi-agent RL, also known as MARL.
 - [Acknowledgments](#Acknowledgments)
 - [Further Links](#Further_Links)
 
-## Introduction <a name="intro"></a>
+## Introduction <a id="intro"></a>
 - Reinforcement learning is **learning** what to do — **how to map situations to actions** — so as **to maximize a numerical reward** signal. The learner is not told which actions to take, but instead must discover which actions yield the most reward by trying them. (Sutton and Barto, [Reinforcement Learning: An Introduction](http://incompleteideas.net/book/the-book.html))
 - Deep reinforcement learning refers to approaches where the knowledge is represented with a deep neural network
 
@@ -56,7 +56,7 @@ Let's introduce the concept of multi-agent RL, also known as MARL.
     - how to combine value-based and policy-based methods
     - bringing together the best of both worlds, to solve challenging reinforcement learning problems
 
-## Motivation for Multi-agent systems <a name="motivation"></a>
+## Motivation for Multi-agent systems <a id="motivation"></a>
 - We live in  a multi agent world
 - We do not become intelligent in isolation
     - As a baby, interactions with our parents shape us  
@@ -89,7 +89,7 @@ Let's introduce the concept of multi-agent RL, also known as MARL.
 | A multi-agent system is **robust**. Agents can be replaced with a **copy** when they fail. | Substituting agent now has to do some **extra work**. |
 | **Scalability**, insertion of new agents becomes easy. | If more agents are added to the system, the **system becomes more complex** than before. |
 
-## Markov Games <a name="markov_games"></a>
+## Markov Games <a id="markov_games"></a>
 - **Single agent**: 
     - A **drone** with the task of grabbing a package.
     - **Actions**: are going right, left, up, down, and grasping.
@@ -121,7 +121,7 @@ Let's introduce the concept of multi-agent RL, also known as MARL.
 - Markovian means that the next state depends only on the present state and the actions taken in this state.
 
 
-## Approaches to MARL <a name="approaches"></a> 
+## Approaches to MARL <a id="approaches"></a> 
 Adapting single-agent techniques to the multi-agent case
 
 ### Approach 1: Non-stationarity environment
@@ -153,7 +153,7 @@ Adapting single-agent techniques to the multi-agent case
     - 1 --> Agents completely care about the team's reward function
 
 
-## Paper: Multi-Agent Actor-Critic for MixedCooperative-Competitive Environments <a name="paper"></a> 
+## Paper: Multi-Agent Actor-Critic for MixedCooperative-Competitive Environments <a id="paper"></a> 
 - [2017, Lowe et al. Multi-Agent Actor-Critic for MixedCooperative-Competitive Environments](https://papers.nips.cc/paper/2017/file/68a9750337a418a86fe06c1991a1d64c-Paper.pdf)
 - Paper implements a **multi-agent version of DDPG**.
 - DDPG is an **off policy actor-critic** algorithm that uses the concept of **target networks**.
@@ -186,7 +186,7 @@ Adapting single-agent techniques to the multi-agent case
     ![image8]
 
 
-## Physical Deception problem: Code implementation <a name="coding"></a> 
+## Physical Deception problem: Code implementation <a id="coding"></a> 
 - Open the folder ```workspace_physical_deception``` and check out the README file there.
 - Train agents to solve the Physical Deception problem.
 - **Goal of the environment**
@@ -197,12 +197,12 @@ Adapting single-agent techniques to the multi-agent case
     - **The optimal solution** is for the **red agent to chase one of the blue agent**, and for the **blue agents to split up** and go toward each of the target.
 
 
-## Setup Instructions <a name="Setup_Instructions"></a>
+## Setup Instructions <a id="Setup_Instructions"></a>
 The following is a brief set of instructions on setting up a cloned repository.
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-### Prerequisites: Installation of Python via Anaconda and Command Line Interaface <a name="Prerequisites"></a>
+### Prerequisites: Installation of Python via Anaconda and Command Line Interaface <a id="Prerequisites"></a>
 - Install [Anaconda](https://www.anaconda.com/distribution/). Install Python 3.7 - 64 Bit
 
 - Upgrade Anaconda via
@@ -216,7 +216,7 @@ $ conda upgrade --all
 $ export PATH="/path/to/anaconda/bin:$PATH"
 ```
 
-### Clone the project <a name="Clone_the_project"></a>
+### Clone the project <a id="Clone_the_project"></a>
 - Open your Command Line Interface
 - Change Directory to your project older, e.g. `cd my_github_projects`
 - Clone the Github Project inside this folder with Git Bash (Terminal) via:
@@ -252,10 +252,10 @@ seaborn = 0.8.1
 $ conda env list
 ```
 
-## Acknowledgments <a name="Acknowledgments"></a>
+## Acknowledgments <a id="Acknowledgments"></a>
 * This project is part of the Udacity Nanodegree program 'Deep Reinforcement Learning'. Please check this [link](https://www.udacity.com) for more information.
 
-## Further Links <a name="Further_Links"></a>
+## Further Links <a id="Further_Links"></a>
 
 Git/Github
 * [GitFlow](https://datasift.github.io/gitflow/IntroducingGitFlow.html)
@@ -302,3 +302,6 @@ Important publications
 * [2017, Fortunato et al., Noisy Networks for Exploration](https://arxiv.org/abs/1706.10295)
 * [2016, Wang et al., Sample Efficient Actor-Critic with Experience Replay --> ACER](https://arxiv.org/abs/1611.01224)
 * [2017, Lowe et al. Multi-Agent Actor-Critic for MixedCooperative-Competitive Environments](https://papers.nips.cc/paper/2017/file/68a9750337a418a86fe06c1991a1d64c-Paper.pdf)
+* [2017, Silver et al. Mastering the Game of Go without Human Knowledge --> AlphaGo Zero](https://discovery.ucl.ac.uk/id/eprint/10045895/1/agz_unformatted_nature.pdf)
+* [2017, Silver et al., Mastering Chess and Shogi by Self-Play with aGeneral Reinforcement Learning Algorithm --> AlphaZero](https://arxiv.org/pdf/1712.01815.pdf)
+
